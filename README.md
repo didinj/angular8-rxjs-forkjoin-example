@@ -1,4 +1,6 @@
-# AngularForkjoin
+# Angular 8 RxJS Multiple HTTP Request using the forkJoin Example
+
+This source code is part of [Angular 8 RxJS Multiple HTTP Request using the forkJoin Example]() tutorial.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
