@@ -1,0 +1,50 @@
+<div class="example-container mat-elevation-z8">
+ <div class="example-loading-shade"
+   *ngIf="isLoadingResults">
+  <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+ </div>
+ <mat-card class="example-card">
+  <mat-card-header>
+   <mat-card-title><h2>{{data1.title}}</h2></mat-card-title>
+   <mat-card-subtitle>Sunrise at {{data1.sun_rise | date: 'HH:mm:ss'}}, Sunset at {{data1.sun_set | date: 'HH:mm:ss'}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+   <ul>
+    <li *ngFor="let source of data1.sources"><a href="{{source.url}}" target="_blank">{{source.title}}</a></li>
+   </ul>
+  </mat-card-content>
+ </mat-card>
+ <mat-card class="example-card">
+  <mat-card-header>
+   <mat-card-title><h2>{{data2.title}}</h2></mat-card-title>
+   <mat-card-subtitle>Sunrise at {{data2.sun_rise | date: 'HH:mm:ss'}}, Sunset at {{data2.sun_set | date: 'HH:mm:ss'}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+   <ul>
+    <li *ngFor="let source of data2.sources"><a href="{{source.url}}" target="_blank">{{source.title}}</a></li>
+   </ul>
+  </mat-card-content>
+ </mat-card>
+ <mat-card class="example-card">
+  <mat-card-header>
+   <mat-card-title><h2>{{data3.title}}</h2></mat-card-title>
+   <mat-card-subtitle>Sunrise at {{data3.sun_rise | date: 'HH:mm:ss'}}, Sunset at {{data3.sun_set | date: 'HH:mm:ss'}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+   <ul>
+    <li *ngFor="let source of data3.sources"><a href="{{source.url}}" target="_blank">{{source.title}}</a></li>
+   </ul>
+  </mat-card-content>
+ </mat-card>
+ <mat-card class="example-card">
+   <mat-card-header>
+    <mat-card-title><h2>{{data4.title}}</h2></mat-card-title>
+    <mat-card-subtitle>Sunrise at {{data4.sun_rise | date: 'HH:mm:ss'}}, Sunset at {{data4.sun_set | date: 'HH:mm:ss'}}</mat-card-subtitle>
+   </mat-card-header>
+   <mat-card-content>
+    <ul>
+     <li *ngFor="let source of data4.sources"><a href="{{source.url}}" target="_blank">{{source.title}}</a></li>
+    </ul>
+   </mat-card-content>
+  </mat-card>
+</div>
